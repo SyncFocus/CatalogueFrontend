@@ -10,7 +10,7 @@ const AddProduct = () => {
 
   const handleSubmit = async (values) => {
     try {
-      await axios.post('http://localhost:8000/api/catalogue/add', values);
+      await axios.post('https://cataloguebackend.onrender.com/api/catalogue/add', values);
       message.success('Product added successfully');
       form.resetFields();
     } catch (error) {
