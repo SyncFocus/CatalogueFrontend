@@ -44,7 +44,7 @@ const AdminPage = () => {
 
   const handleDelete = async (itemcode) => {
     try {
-      await axios.delete(`http://cataloguebackend.onrender.com/api/catalogue/delete/${itemcode}`);
+      await axios.delete(`https://cataloguebackend.onrender.com/api/catalogue/delete/${itemcode}`);
       // await axios.delete(`http://localhost:8000/api/catalogue/delete/${itemcode}`);
       fetchData();
       message.success('Item deleted successfully');
