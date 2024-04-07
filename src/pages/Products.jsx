@@ -34,7 +34,7 @@ const ProductPage = () => {
         <h1>Product Catalogue</h1>
         <Button className="disclaimer-button" onClick={handleDisclaimerClick}>I Agree (Disclaimer)</Button>
       </header>
-      <Row gutter={[16, 16]}>
+      <Row gutter={[16, 16]} style={{ margin: '20px' }}>
         {products.map((product, index) => (
           <Col span={8} key={index}>
             <ProductCard item={product} />
